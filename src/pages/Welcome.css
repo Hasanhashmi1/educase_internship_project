@@ -1,0 +1,136 @@
+/* Main container */
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fafafa;
+  padding: 1rem;
+}
+
+/* Card */
+.welcome-card {
+  height: 80vh;
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Image section */
+.welcome-image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.welcome-image-placeholder {
+  width: 100px;
+  height: 100px;
+  background: #e5e5e5;
+  border-radius: 50%;
+  animation: scaleIn 0.8s ease-in-out;
+}
+
+/* Text */
+.welcome-text-wrapper {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.welcome-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 0.5rem;
+}
+
+.welcome-subtitle {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Buttons */
+.welcome-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.welcome-btn {
+  padding: 0.9rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Create Account Button */
+.create-btn {
+  background: #6b21a8;
+  color: #fff;
+}
+
+.create-btn:hover {
+  background: #7c3aed;
+  transform: translateY(-2px);
+}
+
+/* Login Button */
+.login-btn {
+  background: #ede9fe;
+  color: #6b21a8;
+}
+
+.login-btn:hover {
+  background: #ddd6fe;
+  transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .welcome-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .welcome-title {
+    font-size: 1.3rem;
+  }
+
+  .welcome-subtitle {
+    font-size: 0.85rem;
+  }
+}

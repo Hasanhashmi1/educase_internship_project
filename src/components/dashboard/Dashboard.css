@@ -1,0 +1,103 @@
+.dashboard-container {
+  max-width: 480px;
+  margin: 40px auto;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  font-family: Arial, sans-serif;
+  animation: fadeIn 0.6s ease-in-out;
+  height: 80vh;
+}
+
+.dashboard-title {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dashboard-card {
+  padding: 20px;
+  border-bottom: 1px dashed #d1d5db;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.avatar-section {
+  position: relative;
+  display: inline-block;
+}
+
+.dashboard-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f3f4f6;
+  transition: transform 0.3s ease;
+}
+
+.dashboard-avatar:hover {
+  transform: scale(1.05);
+}
+
+.camera-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #7c3aed;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.camera-btn:hover {
+  transform: scale(1.1);
+}
+
+.dashboard-info {
+  flex: 1;
+}
+
+.dashboard-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.dashboard-email {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 4px 0;
+}
+
+.dashboard-bio {
+  font-size: 13px;
+  color: #374151;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .dashboard-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .dashboard-info {
+    margin-top: 10px;
+  }
+}
