@@ -41,7 +41,7 @@ const Dashboard = () => {
             <div className="dashboard-card">
                 <div className="avatar-section">
                     <img
-                        src={avatar || "https://via.placeholder.com/100"}
+                        src={avatar || "https://img.freepik.com/free-vector/hand-drawn-web-developers_23-2148819604.jpg"}
                         alt="avatar"
                         className="dashboard-avatar"
                     />
